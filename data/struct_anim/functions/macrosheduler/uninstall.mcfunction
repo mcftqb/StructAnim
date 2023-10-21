@@ -1,0 +1,1 @@
+data remove storage struct_anim:schedule table

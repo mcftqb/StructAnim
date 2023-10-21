@@ -1,0 +1,2 @@
+$data modify storage struct_anim:animations frame.placement set from storage struct_anim:animations animators[{id: "$(id)"}].placement
+$function struct_anim:animation/frames/place with storage struct_anim:animations animators[{id: "$(id)"}]

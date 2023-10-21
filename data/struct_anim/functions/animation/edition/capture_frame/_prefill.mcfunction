@@ -1,0 +1,1 @@
+$data modify block $(x) $(y) $(z) name set from storage struct_anim:animations frame.name

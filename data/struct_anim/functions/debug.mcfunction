@@ -1,0 +1,1 @@
+$tellraw @a {"text":"[ERROR] $(text)","color":"dark_red","bold":true,"hoverEvent":{"action":"show_text","value":[{"text":"At $(trace)","color":"dark_green"}]},"clickEvent":{"action":"copy_to_clipboard","value":"$(trace)"}}

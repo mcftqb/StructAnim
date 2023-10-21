@@ -1,0 +1,1 @@
+function struct_anim:dynamic_book/_give with storage struct_anim:dynbook book

@@ -1,0 +1,1 @@
+$data modify storage struct_anim:animations animators[0].id set value "$(animation)/animator/$(num)"

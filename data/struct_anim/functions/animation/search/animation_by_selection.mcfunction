@@ -1,0 +1,3 @@
+function struct_anim:animator/selection/get
+
+function struct_anim:animation/search/animation_by_name with storage struct_anim:animations selected_animator

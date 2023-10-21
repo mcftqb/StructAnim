@@ -1,0 +1,1 @@
+$data modify storage struct_anim:animation_condidates search.animation set from storage struct_anim:animation_condidates animations[{author: "$(name)"}]

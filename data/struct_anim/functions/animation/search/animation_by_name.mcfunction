@@ -1,0 +1,1 @@
+$data modify storage struct_anim:animations search.animation set from storage struct_anim:animations animations[{animation: "$(animation)"}]

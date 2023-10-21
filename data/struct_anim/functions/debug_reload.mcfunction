@@ -1,0 +1,2 @@
+setblock ~ ~ ~ air replace
+reload
