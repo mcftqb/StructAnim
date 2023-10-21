@@ -13,6 +13,11 @@ data modify storage struct_anim:dynbook book.page_ctx merge from storage struct_
 execute unless data storage struct_anim:animations selected_animator{play: true} run data modify storage struct_anim:dynbook book.page_ctx.playpause set value "play"
 execute if data storage struct_anim:animations selected_animator{play: true} run data modify storage struct_anim:dynbook book.page_ctx.playpause set value "pause"
 
+execute unless data storage struct_anim:animations selected_animator{reversed: true} run data modify storage struct_anim:dynbook book.page_ctx.direction set value "normal"
+execute if data storage struct_anim:animations selected_animator{reversed: true} run data modify storage struct_anim:dynbook book.page_ctx.direction set value "reversed"
+
+data modify storage struct_anim:dynbook book.page_ctx.on_click set value "/function struct_anim:dynamic_book/state/edit_frames/_on"
+
 function struct_anim:dynamic_book/state/edit_frames/_make_page with storage struct_anim:dynbook book.page_ctx
 
 function struct_anim:dynamic_book/give
