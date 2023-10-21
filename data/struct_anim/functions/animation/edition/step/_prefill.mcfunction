@@ -1,0 +1,1 @@
+$execute in $(Dimension) run data modify block $(x) $(y) $(z) name set from storage struct_anim:animations root.edition_ctx.frame

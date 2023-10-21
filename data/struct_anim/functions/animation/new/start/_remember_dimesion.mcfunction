@@ -1,0 +1,1 @@
+$data modify storage struct_anim:animation_condidates root.animations[0].controller.Dimension set from entity @p[name="$(author)"] Dimension
