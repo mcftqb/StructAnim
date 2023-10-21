@@ -1,1 +1,1 @@
-$execute positioned $(x) $(y) $(z) run function struct_anim:animation/new/area_marking/_make with storage struct_anim:animation_condidates search.animation
+$execute positioned $(x) $(y) $(z) run function struct_anim:animation/new/area_marking/_make with storage struct_anim:animation_condidates root.search.animation

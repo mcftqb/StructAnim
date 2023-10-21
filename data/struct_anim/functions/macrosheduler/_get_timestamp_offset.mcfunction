@@ -1,1 +1,1 @@
-$data modify storage struct_anim:schedule table.timestamp.value set value $(value)
+$data modify storage struct_anim:schedule root.timestamp.value set value $(value)

@@ -1,2 +1,2 @@
 function struct_anim:animator/selection/get
-function struct_anim:dynamic_book/state/edit_frames/__on_edit with storage struct_anim:animations selected_animator
+function struct_anim:dynamic_book/state/edit_frames/__on_edit with storage struct_anim:animations root.selected_animator

@@ -1,1 +1,1 @@
-data remove storage struct_anim:schedule table
+data remove storage struct_anim:schedule root

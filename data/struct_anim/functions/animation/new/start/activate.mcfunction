@@ -6,7 +6,7 @@ execute if block ~ ~-1 ~ structure_block{name:""} run me Wrong name
 execute if block ~ ~-1 ~ structure_block{name:""} run return 0
 
 # Register animation controller owner
-data modify storage struct_anim:id search.name set from block ~ ~-1 ~ author
-function struct_anim:id/player/store_name with storage struct_anim:id search
+data modify storage struct_anim:id root.search.name set from block ~ ~-1 ~ author
+function struct_anim:id/player/store_name with storage struct_anim:id root.search
 
 execute positioned ~ ~-1 ~ run function struct_anim:animation/new/start/_make

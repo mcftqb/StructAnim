@@ -1,2 +1,2 @@
 $function struct_anim:utils/array/select {storage: "struct_anim:animations", path: "animations", filter: {animation: "$(animation)"}}
-data modify storage struct_anim:animations search.animation set from storage struct_anim:animations animations[-1]
+data modify storage struct_anim:animations root.search.animation set from storage struct_anim:animations root.animations[-1]

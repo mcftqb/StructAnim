@@ -1,1 +1,1 @@
-$data modify storage struct_anim:animations animations[{animation: "$(animation)"}].frames append from storage struct_anim:animations frame.name
+$data modify storage struct_anim:animations root.animations[{animation: "$(animation)"}].frames append from storage struct_anim:animations root.frame.name

@@ -1,1 +1,1 @@
-execute store result storage struct_anim:animations search.animation.frames_count int 1 run data get storage struct_anim:animations search.animation.frames
+execute store result storage struct_anim:animations root.search.animation.frames_count int 1 run data get storage struct_anim:animations root.search.animation.frames
