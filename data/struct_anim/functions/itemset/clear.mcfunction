@@ -1,1 +1,0 @@
-$clear @s #struct_anim:itemsets{struct_anim_itemset: "$(name)"}

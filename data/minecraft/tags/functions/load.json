@@ -3,6 +3,7 @@
         "struct_anim:utils/init",
         "struct_anim:dynamic_book/init",
         "struct_anim:animation/init",
+        "struct_anim:itemset/init",
         "struct_anim:macrosheduler/init",
         "struct_anim:id/init"
     ]
