@@ -10,7 +10,7 @@ execute if data storage struct_anim:schedule table.timestamp{units: "s"} store r
 execute if data storage struct_anim:schedule table.timestamp{units: "d"} store result storage struct_anim:schedule table.timestamp.value double 24000 run data get storage struct_anim:schedule table.timestamp.value 
 
 # if (units !in "tsd") log.error("No such units!")
-execute unless data storage struct_anim:schedule table.timestamp{units: "t"} unless data storage struct_anim:schedule table.timestamp{units: "s"} unless data storage struct_anim:schedule table.timestamp{units: "d"} run function struct_anim:debug {text: "Unknown time units (only t/s/d supported)", trace: "macrosheduler/_calc_timestamp"}
+execute unless data storage struct_anim:schedule table.timestamp{units: "t"} unless data storage struct_anim:schedule table.timestamp{units: "s"} unless data storage struct_anim:schedule table.timestamp{units: "d"} run function struct_anim:utils/log/error {text: "Unknown time units (only t/s/d supported)", trace: "macrosheduler/_calc_timestamp"}
 
 execute store result score #TIMESTAMP_OFFSET struct_anim.timestamp run data get storage struct_anim:schedule table.timestamp.value 
 

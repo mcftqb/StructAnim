@@ -1,6 +1,6 @@
 {
     "values": [
-        "struct_anim:init",
+        "struct_anim:utils/init",
         "struct_anim:dynamic_book/init",
         "struct_anim:macrosheduler/init",
         "struct_anim:id/init"

@@ -1,7 +1,7 @@
 {
     "values": [
         "struct_anim:id/uninstall",
-        "struct_anim:uninstall",
+        "struct_anim:utils/uninstall",
         "struct_anim:animation/uninstall",
         "struct_anim:dynamic_book/uninstall",
         "struct_anim:macrosheduler/uninstall",

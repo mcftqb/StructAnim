@@ -1,1 +1,2 @@
-$data modify storage struct_anim:animations selected_animator set from storage struct_anim:animations animators[{id: "$(id)"}]
+$function struct_anim:utils/array/select {storage: "struct_anim:animations", path: "animators", filter: {id: "$(id)"}}
+data modify storage struct_anim:animations selected_animator set from storage struct_anim:animations animators[-1]

@@ -1,1 +1,2 @@
-$data modify storage struct_anim:animation_condidates search.animation set from storage struct_anim:animation_condidates animations[{author: "$(name)"}]
+$function struct_anim:utils/array/select {storage: "struct_anim:animation_condidates", path: "animations", filter: {author: "$(name)"}}
+data modify storage struct_anim:animation_condidates search.animation set from storage struct_anim:animation_condidates animations[-1]
