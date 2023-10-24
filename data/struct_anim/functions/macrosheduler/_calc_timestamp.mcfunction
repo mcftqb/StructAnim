@@ -14,5 +14,8 @@ execute unless data storage struct_anim:schedule root.timestamp{units: "t"} unle
 
 execute store result score #TIMESTAMP_OFFSET struct_anim.timestamp run data get storage struct_anim:schedule root.timestamp.value 
 
+execute unless score #TIMESTAMP_OFFSET struct_anim.timestamp matches 1.. run tellraw @a [{"color": "red", "text": "Can't schedule task for "}, {"score":{"name": "#TIMESTAMP_OFFSET", "objective": "struct_anim.timestamp"}}, {"text": " tick(-s)"}]
+execute unless score #TIMESTAMP_OFFSET struct_anim.timestamp matches 1.. run return 0
+
 scoreboard players operation #TIMESTAMP struct_anim.timestamp += #TIMESTAMP_OFFSET struct_anim.timestamp
 execute store result storage struct_anim:utils root.args.schedule.timestamp int 1 run scoreboard players get #TIMESTAMP struct_anim.timestamp
