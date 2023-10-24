@@ -1,0 +1,8 @@
+{
+    "values": [
+        "struct_anim:itemset/animation/new/area_marking/clear",
+        "struct_anim:itemset/animation/new/start/clear",
+        "struct_anim:itemset/animation/edition/clear",
+        "struct_anim:dynamic_book/clear"
+    ]
+}

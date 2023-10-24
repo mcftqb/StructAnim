@@ -1,3 +1,3 @@
-$data modify storage struct_anim:itemset root.clear.name set value "$(name)"
+# clear_itemset uses context {name: str} as args
+function struct_anim:itemset/clear/_step with storage struct_anim:utils root.ctx.clear_itemset
 
-function struct_anim:itemset/clear/_step with storage struct_anim:itemset root.clear

@@ -1,0 +1,1 @@
+clear @s written_book{struct_anim_dynbook:1b}

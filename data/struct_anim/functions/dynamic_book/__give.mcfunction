@@ -14,6 +14,6 @@ $execute if score #VAR_1 struct_anim.int matches 1 run item replace entity @s we
 
 $execute if score #VAR_2 struct_anim.int matches 1 run item replace entity @s weapon.offhand with written_book$(tag)
 
-execute if score #VAR_0 struct_anim.int matches 0 if score #VAR_1 struct_anim.int matches 0 if score #VAR_2 struct_anim.int matches 0 run clear @s written_book{struct_anim_dynbook:1b}
+execute if score #VAR_0 struct_anim.int matches 0 if score #VAR_1 struct_anim.int matches 0 if score #VAR_2 struct_anim.int matches 0 run function struct_anim:dynamic_book/clear
 
 $execute if score #VAR_0 struct_anim.int matches 0 if score #VAR_1 struct_anim.int matches 0 if score #VAR_2 struct_anim.int matches 0 run give @s written_book$(tag) 1
