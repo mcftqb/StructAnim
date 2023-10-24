@@ -1,5 +1,7 @@
-data modify storage struct_anim:id root.search.id set value -1
-$execute store success score #IS_OPERATION_SUCCEESSFUL struct_anim.id run data modify storage struct_anim:id root.search.id set from storage struct_anim:id root.players[{name: "$(name)"}].id
+# get_player_id uses args (name: str)
 
-execute unless score #IS_OPERATION_SUCCEESSFUL struct_anim.id matches 1 run function struct_anim:utils/log/error {text: "Player Name not found", trace: "id/player/_get_id"}
-execute unless score #IS_OPERATION_SUCCEESSFUL struct_anim.id matches 1 run data modify storage struct_anim:id root.search.id set value -1
+data modify storage struct_anim:utils root.ctx.array_select set value {storage: "struct_anim:id", path: "root.players", filter: {}}
+data modify storage struct_anim:utils root.ctx.array_select.filter.name set from storage struct_anim:utils root.args.get_player_id.name
+function struct_anim:utils/array/select with storage struct_anim:utils root.ctx.array_select
+
+execute unless score #array_select.has_element struct_anim.int matches 1 run function struct_anim:utils/log/error {text: "Player Name not found", trace: "id/player/_get_id"}

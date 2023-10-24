@@ -1,2 +1,1 @@
-$execute unless data storage struct_anim:schedule root.list[{timestamp: $(timestamp)}] run data modify storage struct_anim:schedule root.list append value {timestamp: $(timestamp), callbacks: []}
-$data modify storage struct_anim:schedule root.list[{timestamp: $(timestamp)}].callbacks append from storage struct_anim:schedule root.new.callback
+$data modify storage struct_anim:schedule root.list[{timestamp: $(timestamp)}].callbacks append from storage struct_anim:utils root.args.schedule.callback

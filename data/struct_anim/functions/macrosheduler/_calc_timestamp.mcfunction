@@ -1,6 +1,6 @@
 execute store result score #TIMESTAMP struct_anim.timestamp run time query gametime
-data modify storage struct_anim:schedule root.timestamp.units set string storage struct_anim:schedule root.new.time -1
-data modify storage struct_anim:schedule root.timestamp.value set string storage struct_anim:schedule root.new.time 0 -1
+data modify storage struct_anim:schedule root.timestamp.units set string storage struct_anim:utils root.args.schedule.time -1
+data modify storage struct_anim:schedule root.timestamp.value set string storage struct_anim:utils root.args.schedule.time 0 -1
 function struct_anim:macrosheduler/_get_timestamp_offset with storage struct_anim:schedule root.timestamp
 
 # if (units == "s") value *= 20
@@ -15,4 +15,4 @@ execute unless data storage struct_anim:schedule root.timestamp{units: "t"} unle
 execute store result score #TIMESTAMP_OFFSET struct_anim.timestamp run data get storage struct_anim:schedule root.timestamp.value 
 
 scoreboard players operation #TIMESTAMP struct_anim.timestamp += #TIMESTAMP_OFFSET struct_anim.timestamp
-execute store result storage struct_anim:schedule root.new.timestamp int 1 run scoreboard players get #TIMESTAMP struct_anim.timestamp
+execute store result storage struct_anim:utils root.args.schedule.timestamp int 1 run scoreboard players get #TIMESTAMP struct_anim.timestamp

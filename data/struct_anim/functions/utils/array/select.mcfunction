@@ -1,4 +1,13 @@
-$execute if data storage $(storage) $(path)[-1]$(filter) run return 0
+# array_select uses context
+# {storage: "name", path: "some.path", filter: {key: "some_key"}}
+# Moves filtered element at the end of array (-1)
+# Returns #array_select.has_element struct_anim.int
+
+$execute store success score #array_select.has_element struct_anim.int if data storage $(storage) $(path)[$(filter)]
+execute if score #array_select.has_element struct_anim.int matches 0 run return 0
+
+$data modify storage struct_anim:utils root.tmp set from storage $(storage) $(path)[-1]
+$execute if data storage struct_anim:utils root.tmp$(filter) run return 1
 
 data remove storage struct_anim:utils root.tmp
 $data modify storage struct_anim:utils root.tmp set from storage $(storage) $(path)[$(filter)]

@@ -53,8 +53,36 @@
 	"Select array element" : {
 		"prefix": "arraySelect",
 		"body": [
-			"\\$function struct_anim:utils/array/select {storage: \"$1\", path: \"$2\", filter: {id: \"\\$(id)\"}}}",
-			"$0"
+			"data modify storage struct_anim:utils root.ctx.array_select set value {storage: \"\", path: \"\", filter: {}}",
+			"data modify storage struct_anim:utils root.ctx.array_select.filter.$1 set from $2",
+			"function struct_anim:utils/array/select with storage struct_anim:utils root.ctx.array_select"
+		]
+	},
+	"Upsert array element" : {
+		"prefix": "arrayUpsert",
+		"body": [
+			"data modify storage struct_anim:utils root.ctx.array_upsert set value {storage: \"\", path: \"\", filter: {}, value_path:\"\", value: {}}",
+			"data modify storage struct_anim:utils root.ctx.array_upsert.filter.$1 set from $2",
+			"data modify storage struct_anim:utils root.ctx.array_upsert.value.$1 set from $2",
+			"function struct_anim:utils/array/upsert with storage struct_anim:utils root.ctx.array_upsert"
+		]
+	},
+	"Function Arguments" : {
+		"prefix": "uArgs",
+		"body": [
+			"storage struct_anim:utils root.args.$0"
+		]
+	},
+	"Function Result Return" : {
+		"prefix": "uReturn",
+		"body": [
+			"storage struct_anim:utils root.return.$0"
+		]
+	},
+	"Macro-function context" : {
+		"prefix": "uCtx",
+		"body": [
+			"storage struct_anim:utils root.ctx.$0"
 		]
 	}
 }

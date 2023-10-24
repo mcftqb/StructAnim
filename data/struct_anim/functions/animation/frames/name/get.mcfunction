@@ -1,1 +1,0 @@
-$data modify storage struct_anim:animations root.frame.name set value "$(animation)/frame_$(frames_count)"

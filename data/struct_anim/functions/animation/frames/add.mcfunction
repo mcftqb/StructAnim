@@ -1,2 +1,4 @@
-function struct_anim:animation/frames/name/new
-function struct_anim:animation/frames/_add with storage struct_anim:animations root.search.animation
+# Uses transitive selected animation [-1]
+function struct_anim:animation/frames/count
+function struct_anim:animation/frames/_get_name with storage struct_anim:animations root.animations[-1]
+function struct_anim:animation/frames/count
