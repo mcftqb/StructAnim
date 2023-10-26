@@ -1,1 +1,0 @@
-$execute positioned $(x) $(y) $(z) positioned ~ ~1 ~ facing $(x) $(y) $(z) run tp ~ ~ ~

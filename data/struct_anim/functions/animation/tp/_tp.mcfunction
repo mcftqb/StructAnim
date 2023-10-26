@@ -1,0 +1,1 @@
+$execute in $(Dimension) positioned $(x) $(y) $(z) run tp @s ~ ~ ~ $(rot_x) $(rot_y)
