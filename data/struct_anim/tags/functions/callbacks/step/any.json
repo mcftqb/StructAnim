@@ -1,0 +1,6 @@
+{
+    "values": [
+        "struct_anim:animation/frames/callback/step/run_callbacks",
+        "struct_anim:animation/frames/callback/animation_edge/hook"
+    ]
+}

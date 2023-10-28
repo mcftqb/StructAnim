@@ -11,6 +11,6 @@ data modify storage struct_anim:utils root.args.animator_next_frame.id set from 
 function struct_anim:animator/play/step/next
 
 data modify storage struct_anim:utils root.args.schedule.time set from storage struct_anim:animations root.animators[-1].interval
-data modify storage struct_anim:utils root.args.schedule.callback.function set value 'function struct_anim:animator/play/contineous/play'
+data modify storage struct_anim:utils root.args.schedule.callback.function set value 'function struct_anim:animator/play/contineous/play_step'
 data modify storage struct_anim:utils root.args.schedule.callback.args set from storage struct_anim:utils root.args.schedule_callback.args
 function struct_anim:macrosheduler/schedule

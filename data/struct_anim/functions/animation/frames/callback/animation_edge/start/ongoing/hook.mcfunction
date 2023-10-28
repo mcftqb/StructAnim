@@ -1,0 +1,1 @@
+execute unless data storage struct_anim:animations root.animators[-1].just_started run function #struct_anim:callbacks/animation_edge/start/ongoing
