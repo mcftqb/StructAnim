@@ -20,6 +20,8 @@ execute if score #dynbook.edit_frames.animation.reversed struct_anim.int matches
 
 data modify storage struct_anim:dynbook root.book.page_ctx.on_click set value "/function struct_anim:dynamic_book/state/edit_frames/_on"
 
+function #struct_anim:callbacks/group
+
 function struct_anim:dynamic_book/state/edit_frames/_make_page with storage struct_anim:dynbook root.book.page_ctx
 
 function struct_anim:dynamic_book/give

@@ -1,0 +1,3 @@
+function struct_anim:itemset/animation/edition/animation_trigger/clear
+$give @s command_block{display:{Name:'{"text":"Animation: Play","color":"gold","bold":true}',Lore:['{"text":"Use this to trigger animation play"}']},struct_anim_itemset: "animation_edition.animation_trigger",BlockEntityTag:{TrackOutput:0b,auto:0b,Command:"function struct_anim:animator/play/contineous/play_macro {id: \"$(id)\"}"}} 1
+$give @s command_block{display:{Name:'{"text":"Animation: Pause","color":"gold","bold":true}',Lore:['{"text":"Use this to stop animation"}']},struct_anim_itemset: "animation_edition.animation_trigger",BlockEntityTag:{TrackOutput:0b,auto:0b,Command:"function struct_anim:animator/play/contineous/pause_macro {id: \"$(id)\"}"}} 1
