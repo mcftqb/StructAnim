@@ -6,14 +6,8 @@ execute store success score #VAR_0 struct_anim.int if entity @e[type=marker,tag=
 $execute as @e[type=marker,tag=struct_anim_select] at @s run data modify block ~ ~ ~ Book.tag set value $(tag)
 function struct_anim:select/deselect
 
-execute store success score #VAR_1 struct_anim.int if data entity @s SelectedItem.tag.struct_anim_dynbook 
+function struct_anim:dynamic_book/_try_soft_update
 
-execute store success score #VAR_2 struct_anim.int if data entity @s Inventory[{Slot:-106b}].tag.struct_anim_dynbook 
+execute if score #VAR_0 struct_anim.int matches 0 if score #dynamic_book.has_in_mainhand struct_anim.int matches 0 if score #dynamic_book.has_in_offhand struct_anim.int matches 0 run function struct_anim:dynamic_book/clear
 
-$execute if score #VAR_1 struct_anim.int matches 1 run item replace entity @s weapon.mainhand with written_book$(tag)
-
-$execute if score #VAR_2 struct_anim.int matches 1 run item replace entity @s weapon.offhand with written_book$(tag)
-
-execute if score #VAR_0 struct_anim.int matches 0 if score #VAR_1 struct_anim.int matches 0 if score #VAR_2 struct_anim.int matches 0 run function struct_anim:dynamic_book/clear
-
-$execute if score #VAR_0 struct_anim.int matches 0 if score #VAR_1 struct_anim.int matches 0 if score #VAR_2 struct_anim.int matches 0 run give @s written_book$(tag) 1
+$execute if score #VAR_0 struct_anim.int matches 0 if score #dynamic_book.has_in_mainhand struct_anim.int matches 0 if score #dynamic_book.has_in_offhand struct_anim.int matches 0 run give @s written_book$(tag) 1

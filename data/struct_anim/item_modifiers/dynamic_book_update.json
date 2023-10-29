@@ -1,0 +1,20 @@
+[
+	{
+		"function": "minecraft:copy_nbt",
+		"source": {
+			"type": "minecraft:storage",
+			"source": "struct_anim:dynbook"
+		},
+		"ops": [
+            {
+				"source": "root.book.pages",
+				"target": "pages",
+				"op": "replace"
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{resolved:0b}"
+	}
+]
