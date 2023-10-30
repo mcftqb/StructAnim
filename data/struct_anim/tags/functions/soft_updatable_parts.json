@@ -1,0 +1,6 @@
+{
+    "values": [
+        "struct_anim:dynamic_book/state/edit_frames/parts/animation/controls/make_playpause",
+        "struct_anim:dynamic_book/state/edit_frames/parts/animation/controls/make_direction"
+    ]
+}

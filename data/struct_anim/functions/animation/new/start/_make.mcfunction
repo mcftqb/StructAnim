@@ -3,7 +3,7 @@
 
 function struct_anim:animation/new/start/_make_name
 
-data modify storage struct_anim:animation_condidates root.animations prepend value {animation: "", author: ""}
+data modify storage struct_anim:animation_condidates root.animations prepend value {animation: "", author: "", frames_count: 0}
 data modify storage struct_anim:animation_condidates root.animations[0].animation set from block ~ ~ ~ name
 data modify storage struct_anim:animation_condidates root.animations[0].author set from block ~ ~ ~ author
 

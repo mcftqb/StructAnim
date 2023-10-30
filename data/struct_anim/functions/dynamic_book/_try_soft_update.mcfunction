@@ -2,11 +2,16 @@
 # and can't update macros-dependent parts 
 # or sections wich should be re-evaluated
 
-# TODO: Current implementation assumes that book content are globally accessible for all the players (same for all), but in practice by player separation not yet implemented
-
 execute store success score #dynamic_book.has_in_mainhand struct_anim.int if predicate struct_anim:dynamic_book/in_mainhand 
 
 execute store success score #dynamic_book.has_in_offhand struct_anim.int if predicate struct_anim:dynamic_book/in_offhand 
+
+execute if score #dynamic_book.has_in_mainhand struct_anim.int matches 0 if score #dynamic_book.has_in_offhand struct_anim.int matches 0 run return 0
+
+function struct_anim:dynamic_book/selection/get
+function struct_anim:animator/selection/get
+function struct_anim:animation/search/animation_by_selection
+function #struct_anim:soft_updatable_parts
 
 execute if score #dynamic_book.has_in_mainhand struct_anim.int matches 1 run item modify entity @s weapon.mainhand struct_anim:dynamic_book_update
 

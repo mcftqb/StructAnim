@@ -7,7 +7,7 @@
 		},
 		"ops": [
             {
-				"source": "root.book.pages",
+				"source": "root.books[-1].pages",
 				"target": "pages",
 				"op": "replace"
 			}
