@@ -1,4 +1,5 @@
 function struct_anim:animator/selection/get
+function #struct_anim:callbacks/group
 
 execute store success score #callbacks_management.remove.last.hasAny struct_anim.int if data storage struct_anim:animations root.animators[-1].callbacks.all[0]
 execute unless score #callbacks_management.remove.last.hasAny struct_anim.int matches 1 run tellraw @s {"text": "Nothing to remove", "color": "red"}
