@@ -13,6 +13,7 @@ data modify storage struct_anim:animations root.animators append from storage st
 execute store result storage struct_anim:utils root.ctx.make_animator_id.num int 1 run data get storage struct_anim:animations root.animators
 data modify storage struct_anim:utils root.ctx.make_animator_id.animation set from storage struct_anim:animations root.animators[-1].animation
 function struct_anim:animator/_new with storage struct_anim:utils root.ctx.make_animator_id
+function struct_anim:animator/mark/run
 
 function struct_anim:animator/get_block_pos
 data modify storage struct_anim:animations root.animators[-1].controller set from storage struct_anim:utils root.return.get_block_pos
