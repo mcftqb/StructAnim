@@ -1,2 +1,2 @@
-$data modify storage struct_anim:dynbook root.books[-1].parts.frames.new set value '["[",{"text":"New Frame","color":"gold","clickEvent":{"action":"run_command","value":"$(on_click)"}},"] Total: ", {"nbt":"$(this_animation).frames_count","storage": "struct_anim:animations", "color": "dark_gray"}]'
+$data modify storage struct_anim:dynbook root.books[-1].parts.current set value '["[",{"text":"New Frame","color":"gold","clickEvent":{"action":"run_command","value":"$(on_click)"}},"] Total: ", {"nbt":"$(this_animation).frames_count","storage": "struct_anim:animations", "color": "dark_gray"}]'
 # tellraw @s 

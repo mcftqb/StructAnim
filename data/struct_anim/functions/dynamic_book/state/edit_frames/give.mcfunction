@@ -13,7 +13,10 @@ data modify storage struct_anim:dynbook root.books[-1].page_ctx.animation set fr
 function struct_anim:id/player/get_name
 data modify storage struct_anim:dynbook root.books[-1].page_ctx.player set from storage struct_anim:id root.players[-1].name
 
+function struct_anim:dynamic_book/state/edit_frames/_add_selectors with storage struct_anim:dynbook root.books[-1].page_ctx
+
 data modify storage struct_anim:dynbook root.books[-1].parts.page set value []
 function struct_anim:dynamic_book/state/edit_frames/_make_page with storage struct_anim:dynbook root.books[-1].page_ctx
+function struct_anim:dynamic_book/state/edit_frames/_make_page2 with storage struct_anim:dynbook root.books[-1].page_ctx
 
 function struct_anim:dynamic_book/give

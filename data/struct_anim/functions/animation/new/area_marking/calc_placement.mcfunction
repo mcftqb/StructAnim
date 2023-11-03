@@ -27,3 +27,11 @@ data modify storage struct_anim:animations root.animators[-1].placement.rotation
 data modify storage struct_anim:animations root.animators[-1].placement.mirror set from block ~ ~ ~ mirror
 data modify storage struct_anim:animations root.animators[-1].placement.seed set from block ~ ~ ~ seed
 data modify storage struct_anim:animations root.animators[-1].placement.integrity set from block ~ ~ ~ integrity
+
+data modify storage struct_anim:animations root.animators[-1].placement.offset.x set from block ~ ~ ~ posX
+data modify storage struct_anim:animations root.animators[-1].placement.offset.y set from block ~ ~ ~ posY
+data modify storage struct_anim:animations root.animators[-1].placement.offset.z set from block ~ ~ ~ posZ
+
+data modify storage struct_anim:animations root.animators[-1].placement.size.x set from block ~ ~ ~ sizeX
+data modify storage struct_anim:animations root.animators[-1].placement.size.y set from block ~ ~ ~ sizeY
+data modify storage struct_anim:animations root.animators[-1].placement.size.z set from block ~ ~ ~ sizeZ

@@ -15,6 +15,8 @@ data modify storage struct_anim:utils root.ctx.make_animator_id.animation set fr
 function struct_anim:animator/_new with storage struct_anim:utils root.ctx.make_animator_id
 function struct_anim:animator/mark/run
 
+data modify storage struct_anim:animations root.animators[-1].copy_of set from block ~ ~ ~ metadata
+
 function struct_anim:animator/get_block_pos
 data modify storage struct_anim:animations root.animators[-1].controller set from storage struct_anim:utils root.return.get_block_pos
 data modify storage struct_anim:animations root.animators[-1].play set value false
