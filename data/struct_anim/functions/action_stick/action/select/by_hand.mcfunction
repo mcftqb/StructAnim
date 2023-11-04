@@ -1,0 +1,2 @@
+data modify storage struct_anim:utils root.args.action_stick.action.select.num set from entity @s SelectedItem.tag.struct_anim_action_stick_current
+function struct_anim:action_stick/action/select/by_num

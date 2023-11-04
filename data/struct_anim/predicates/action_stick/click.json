@@ -1,0 +1,16 @@
+[
+    {
+      "condition": "minecraft:reference",
+      "name": "struct_anim:action_stick/has"
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "struct_anim.action_stick_click": {
+          "min": 1
+        }
+      }
+    }
+]
+  

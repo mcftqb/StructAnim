@@ -1,0 +1,15 @@
+[
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "flags": {
+          "is_sneaking": true
+        }
+      }
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "struct_anim:action_stick/click"
+    }
+]

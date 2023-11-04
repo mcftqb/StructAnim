@@ -1,0 +1,22 @@
+[
+    {
+      "function": "minecraft:copy_nbt",
+      "source": {
+        "type": "minecraft:storage",
+        "source": "struct_anim:dynbook"
+      },
+      "ops": [
+        {
+          "source": "root.action_stick.item.struct_anim_action_stick_current",
+          "target": "struct_anim_action_stick_current",
+          "op": "replace"
+        },
+        {
+          "source": "root.action_stick.item.display",
+          "target": "display",
+          "op": "replace"
+        }
+      ]
+    }
+  ]
+  

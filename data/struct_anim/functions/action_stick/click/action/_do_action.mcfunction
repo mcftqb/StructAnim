@@ -1,0 +1,1 @@
+$function struct_anim:action_stick/action/$(action)/click

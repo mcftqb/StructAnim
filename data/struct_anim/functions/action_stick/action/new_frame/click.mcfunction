@@ -1,0 +1,1 @@
+function struct_anim:animation/edition/capture_frame/start

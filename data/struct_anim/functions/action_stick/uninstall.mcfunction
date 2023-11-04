@@ -1,0 +1,1 @@
+scoreboard objectives remove struct_anim.action_stick_click
