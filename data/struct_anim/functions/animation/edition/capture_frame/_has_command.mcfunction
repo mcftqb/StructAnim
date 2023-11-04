@@ -1,0 +1,1 @@
+tellraw @s [{"text": "", "color": "gold"}, {"text": "New frame", "bold": true, "hoverEvent": {"action": "show_text", "value": {"nbt":"root.animations[-1].frames[-1]", "storage": "struct_anim:animations", "color": "gold"}}}, " (", {"score":{"name": "#animation.capture_frame.num", "objective": "struct_anim.int"}}, ") created & saved!"]
