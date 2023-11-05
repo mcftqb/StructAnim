@@ -1,0 +1,1 @@
+$execute in $(Dimension) positioned $(x) $(y) $(z) run fill ~ ~ ~ ~ ~ ~ air replace structure_block

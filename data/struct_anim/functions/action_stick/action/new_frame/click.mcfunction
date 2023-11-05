@@ -1,1 +1,1 @@
-function struct_anim:animation/edition/capture_frame/start
+function struct_anim:dynamic_book/state/edit_frames/parts/frames/new/_on_click

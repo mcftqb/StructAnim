@@ -1,0 +1,1 @@
+function struct_anim:dynamic_book/state/edit_frames/parts/select/_on_click

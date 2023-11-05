@@ -1,1 +1,0 @@
-$execute in $(Dimension) run setblock $(x) $(y) $(z) air

@@ -1,0 +1,1 @@
+function struct_anim:animator/hide/_fill with storage struct_anim:animations root.animators[-1].controller
