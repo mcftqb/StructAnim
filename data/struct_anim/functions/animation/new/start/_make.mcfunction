@@ -1,9 +1,9 @@
 #define storage struct_anim:animations
 #define storage struct_anim:animation_condidates
 
-function struct_anim:animation/new/start/_make_name
-
 data modify storage struct_anim:animation_condidates root.animations prepend value {animation: "", author: "", frames_count: 0}
+data modify storage struct_anim:animation_condidates root.animations[0].name set string block ~ ~ ~ name 10
+function struct_anim:animation/new/start/_make_name
 data modify storage struct_anim:animation_condidates root.animations[0].animation set from block ~ ~ ~ name
 data modify storage struct_anim:animation_condidates root.animations[0].author set from block ~ ~ ~ author
 

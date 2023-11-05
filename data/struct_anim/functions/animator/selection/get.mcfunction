@@ -1,4 +1,4 @@
-function struct_anim:id/player/get_name
+function struct_anim:id/player/select_by_uuid
 data modify storage struct_anim:utils root.args.get_selected_animator_id.player set from storage struct_anim:id root.players[-1].name
 function struct_anim:animator/selection/get_id
 

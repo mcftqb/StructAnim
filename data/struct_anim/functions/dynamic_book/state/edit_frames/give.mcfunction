@@ -10,7 +10,7 @@ function struct_anim:animation/search/animation_by_selection
 data modify storage struct_anim:dynbook root.books[-1].page_ctx.id set from storage struct_anim:animations root.animators[-1].id
 data modify storage struct_anim:dynbook root.books[-1].page_ctx.animation set from storage struct_anim:animations root.animators[-1].animation
 
-function struct_anim:id/player/get_name
+function struct_anim:id/player/select_by_uuid
 data modify storage struct_anim:dynbook root.books[-1].page_ctx.player set from storage struct_anim:id root.players[-1].name
 
 function struct_anim:dynamic_book/state/edit_frames/_add_selectors with storage struct_anim:dynbook root.books[-1].page_ctx

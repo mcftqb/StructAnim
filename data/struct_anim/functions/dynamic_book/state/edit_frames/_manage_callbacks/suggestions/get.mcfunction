@@ -1,4 +1,4 @@
-function struct_anim:id/player/get_name
+function struct_anim:id/player/select_by_uuid
 
 data modify storage struct_anim:utils root.ctx.array_select set value {storage: "struct_anim:animations", path: "root.suggestions", filter: {}}
 data modify storage struct_anim:utils root.ctx.array_select.filter.player set from storage struct_anim:id root.players[-1].name
