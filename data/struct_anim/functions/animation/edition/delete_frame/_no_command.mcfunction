@@ -1,0 +1,4 @@
+data modify storage struct_anim:utils root.ctx.frame.remove.manual.path set string storage struct_anim:animations root.animators[-1].frame_name 12
+tellraw @s [{"text": "", "color": "gold"}, {"text": "Frame ", "bold": true, "hoverEvent": {"action": "show_text", "value": {"nbt":"root.animators[-1].frame_name", "storage": "struct_anim:animations", "color": "gold"}}, "extra": [{"nbt":"root.animators[-1].frame", "storage": "struct_anim:animations", "color": "gold"}]}, " removed from animation, BUT not from your disk!", {"text": " [", "color": "red"}, {"text": "Automate", "bold": true, "hoverEvent": {"action": "show_text","value": "Click to know how to automate frame removal"}, "clickEvent": {"action": "run_command", "value": "/function struct_anim:animation/edition/delete_frame/_show_automation_guide"}},{"text": "]", "color": "red"}]
+
+function struct_anim:animation/edition/delete_frame/_show_manual_remove_guide with storage struct_anim:utils root.ctx.frame.remove.manual

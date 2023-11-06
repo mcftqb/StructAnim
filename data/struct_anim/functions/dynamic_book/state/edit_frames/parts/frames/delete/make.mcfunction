@@ -1,0 +1,2 @@
+$data modify storage struct_anim:dynbook root.books[-1].parts.current set value '["[",{"text":"Delete Selected Frame","color":"red","hoverEvent": {"action": "show_text","value": ["Currently selected: ", {"nbt":"$(this_animator).frame_name","storage": "struct_anim:animations", "color": "dark_gray"}]},"clickEvent":{"action":"run_command","value":"$(on_click)"}},"]: ", {"nbt":"$(this_animator).frame","storage": "struct_anim:animations", "color": "dark_gray"}]'
+# tellraw @s 
