@@ -1,0 +1,2 @@
+$data modify storage struct_anim:utils root.return.animation.selection.result append value '{"text": "$(name)", "hoverEvent": {"action": "show_text", "value": [{"text":"","font": "uniform","color": "gold"},{"text": "$(animation)", "bold": true}, " by ", {"text":"$(author)", "bold": true}]},"insertion": "$(animation)","clickEvent": {"action": "run_command","value": "/function struct_anim:dynamic_book/state/nothing_selected/parts/animation/choose/select_animation/_set_animation_suggestion {value: \\"$(animation)\\"}"}}'
+# tellraw @s 

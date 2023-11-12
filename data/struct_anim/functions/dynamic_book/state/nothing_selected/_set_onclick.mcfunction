@@ -1,0 +1,1 @@
+$data modify storage struct_anim:dynbook root.books[-1].page_ctx.on_click set value "/function struct_anim:dynamic_book/state/nothing_selected/parts/$(path)/_on_click"

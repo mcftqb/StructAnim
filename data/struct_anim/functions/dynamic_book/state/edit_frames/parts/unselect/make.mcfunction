@@ -1,0 +1,2 @@
+$data modify storage struct_anim:dynbook root.books[-1].parts.current set value '["[",{"text":"Unselect Animation","color":"red","clickEvent":{"action":"run_command","value":"$(on_click)"},"hoverEvent":{"action":"show_text","value":[{"text":"","color":"gold"}, "Animation ID: ", {"nbt":"$(this_animator).animation", "font":"uniform", "bold":"true", "storage": "struct_anim:animations"}, "\\nInstance ID: ", {"text":"$(id)", "font":"uniform", "bold":"true"}]}},"]"]'
+# tellraw @s 

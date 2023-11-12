@@ -5,6 +5,8 @@ data modify storage struct_anim:dynbook root.books[-1].parts.page append value [
 # Add components
 function struct_anim:dynamic_book/state/edit_frames/_add_component {path: "visibility"}
 
+function struct_anim:dynamic_book/state/edit_frames/_add_component {path: "unselect"}
+
 # DANGER ZONE
 data modify storage struct_anim:dynbook root.books[-1].parts.page[-1] append value '["[ = ", {"text": "DANGER ZONE", "color": "red", "bold": true}, " = ]"]'
 

@@ -1,0 +1,1 @@
+function struct_anim:dynamic_book/state/nothing_selected/parts/animation/choose/select_animation/choose

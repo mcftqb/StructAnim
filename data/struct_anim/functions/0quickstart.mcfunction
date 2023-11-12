@@ -1,1 +1,1 @@
-function struct_anim:itemset/animation/new/start/give
+function struct_anim:itemset/animation/nothing_selected/give
