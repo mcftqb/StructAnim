@@ -1,0 +1,1 @@
+$kill @e[type=marker,tag=struct_anim_animation_controller,nbt={data:{id:"$(id)"}}]

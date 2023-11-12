@@ -1,0 +1,2 @@
+$data modify storage struct_anim:dynbook root.books[-1].parts.current set value '["[",{"text":"Delete Animation Instance","color":"red","hoverEvent": {"action": "show_text","value": {"nbt":"$(this_animator).id","storage": "struct_anim:animations", "color": "dark_gray"}},"clickEvent":{"action":"run_command","value":"$(on_click)"}},"]"]'
+# tellraw @s 
