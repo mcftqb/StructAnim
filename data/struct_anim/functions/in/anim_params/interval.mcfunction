@@ -9,4 +9,4 @@ data remove storage struct_anim:utils root.args.schedule.time
 
 data modify storage struct_anim:animations root.animators[-1].interval set from storage struct_anim:utils root.args.in.anim_params.interval
 
-tellraw @s [{"text": "Animation(", "color": "gold"}, {"nbt":"root.animators[-1].id", "storage": "struct_anim:animations"}, ").interval successfully set to ", {"nbt":"root.animators[-1].interval", "storage": "struct_anim:animations", "bold": true}]
+tellraw @s [{"text": "Animation(", "color": "gold"}, {"nbt":"root.animators[-1].id", "storage": "struct_anim:animations","font": "uniform","bold": true}, ").interval successfully set to ", {"nbt":"root.animators[-1].interval", "storage": "struct_anim:animations", "bold": true}]
