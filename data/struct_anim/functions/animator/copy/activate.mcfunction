@@ -19,7 +19,7 @@ function struct_anim:animator/get_block_pos
 data modify storage struct_anim:animations root.animators[-1].controller set from storage struct_anim:utils root.return.get_block_pos
 data modify storage struct_anim:animations root.animators[-1].play set value false
 
-function struct_anim:animation/new/area_marking/calc_placement
+function struct_anim:animation/new/area_marking/calc_placement/run
 
 data modify storage struct_anim:utils root.args.select_animator.animator set from storage struct_anim:animations root.animators[-1].id
 function struct_anim:animator/selection/set

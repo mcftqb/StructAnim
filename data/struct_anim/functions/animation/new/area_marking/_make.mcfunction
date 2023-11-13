@@ -12,6 +12,6 @@ data modify storage struct_anim:utils root.args.animator_new.animation set from 
 function struct_anim:animator/new
 data remove storage struct_anim:animation_condidates root.animations[-1]
 
-function struct_anim:animation/new/area_marking/calc_placement
+function struct_anim:animation/new/area_marking/calc_placement/run
 
 function struct_anim:itemset/animation/edition/give with storage struct_anim:animations root.animations[-1]

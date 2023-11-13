@@ -14,6 +14,6 @@ data modify storage struct_anim:utils root.args.animator_new.controller set from
 data modify storage struct_anim:utils root.args.animator_new.animation set from storage struct_anim:animations root.animations[-1].animation
 function struct_anim:animator/new
 
-function struct_anim:animation/new/area_marking/calc_placement
+function struct_anim:animation/new/area_marking/calc_placement/run
 
 function struct_anim:itemset/animation/edition/give with storage struct_anim:animations root.animations[-1]

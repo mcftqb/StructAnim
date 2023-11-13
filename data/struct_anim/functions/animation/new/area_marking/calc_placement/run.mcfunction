@@ -36,4 +36,4 @@ data modify storage struct_anim:animations root.animators[-1].placement.size.x s
 data modify storage struct_anim:animations root.animators[-1].placement.size.y set from block ~ ~ ~ sizeY
 data modify storage struct_anim:animations root.animators[-1].placement.size.z set from block ~ ~ ~ sizeZ
 
-function struct_anim:animation/new/area_marking/calc_placement_end
+function struct_anim:animation/new/area_marking/calc_placement/end
