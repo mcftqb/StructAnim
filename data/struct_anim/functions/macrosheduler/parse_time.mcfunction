@@ -20,5 +20,5 @@ execute if score #schedule.parse_time.error struct_anim.int matches 1 run return
 execute store result score #TIMESTAMP_OFFSET struct_anim.timestamp run data get storage struct_anim:schedule root.timestamp.value 
 
 execute store success score #schedule.parse_time.error struct_anim.int unless score #TIMESTAMP_OFFSET struct_anim.timestamp matches 1..
-execute if score #schedule.parse_time.error struct_anim.int matches 1 run tellraw @a [{"color": "red", "text": "Incorrect interval: "}, {"score":{"name": "#TIMESTAMP_OFFSET", "objective": "struct_anim.timestamp"}}, {"text": " tick(-s)"}]
+execute if score #schedule.parse_time.error struct_anim.int matches 1 run tellraw @s [{"color": "red", "text": "Incorrect interval: "}, {"score":{"name": "#TIMESTAMP_OFFSET", "objective": "struct_anim.timestamp"}}, {"text": " tick(-s)"}]
 execute if score #schedule.parse_time.error struct_anim.int matches 1 run return 0
