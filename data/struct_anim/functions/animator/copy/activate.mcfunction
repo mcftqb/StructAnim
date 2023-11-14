@@ -1,6 +1,8 @@
 setblock ~ ~1 ~ air
 execute unless block ~ ~ ~ structure_block{mode:"LOAD"} run me Block below is not an Animation Controller
 execute unless block ~ ~ ~ structure_block{mode:"LOAD"} run return 0
+execute unless entity @p[gamemode=creative,distance=..10] run me You must be in creative to make copies!
+execute unless entity @p[gamemode=creative,distance=..10] run return 0
 
 data modify storage struct_anim:utils root.args.get_animator.id set from block ~ ~ ~ metadata
 function struct_anim:animator/get
@@ -28,4 +30,4 @@ data modify storage struct_anim:utils root.args.select_animator.animator set fro
 function struct_anim:animator/selection/set
 function struct_anim:animation/search/animation_by_selection
 
-function struct_anim:itemset/animation/edition/give with storage struct_anim:animations root.animations[-1]
+execute as @p[gamemode=creative] run function struct_anim:itemset/animation/edition/_give

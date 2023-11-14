@@ -1,6 +1,8 @@
 setblock ~ ~1 ~ air
 execute unless block ~ ~ ~ structure_block{mode:"LOAD"} run me Block below is not an Animation Controller
 execute unless block ~ ~ ~ structure_block{mode:"LOAD"} run return 0
+execute unless entity @p[gamemode=creative,distance=..10] run me You must be in creative to make copies!
+execute unless entity @p[gamemode=creative,distance=..10] run return 0
 function struct_anim:animation/new/area_marking/ensure_has_size
 execute unless score #animation.size_check.error struct_anim.int matches 0 run me Load structure at least once before saving!
 execute unless score #animation.size_check.error struct_anim.int matches 0 run return 0
@@ -19,4 +21,4 @@ function struct_anim:animator/new
 
 function struct_anim:animation/new/area_marking/calc_placement/run
 
-function struct_anim:itemset/animation/edition/give with storage struct_anim:animations root.animations[-1]
+execute as @p[gamemode=creative] run function struct_anim:itemset/animation/edition/_give
