@@ -1,0 +1,2 @@
+data modify storage struct_anim:utils root.ctx.input.add_callback.char set string storage struct_anim:utils root.ctx.input.add_callback.callback 0 1
+execute if data storage struct_anim:utils root.ctx.input.add_callback{char: "/"} run data modify storage struct_anim:utils root.ctx.input.add_callback.callback set string storage struct_anim:utils root.ctx.input.add_callback.callback 1
