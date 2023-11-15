@@ -1,6 +1,8 @@
 {
     "values": [
+        "#struct_anim:callbacks/filters",
         "struct_anim:animation/frames/callback/step/run_callbacks",
-        "struct_anim:animation/frames/callback/animation_edge/hook"
+        "struct_anim:animation/frames/callback/animation_edge/hook",
+        "struct_anim:animation/frames/callback/step/ongoing/hook"
     ]
 }

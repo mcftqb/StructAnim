@@ -1,6 +1,8 @@
 {
     "values": [
         "struct_anim:animation/frames/callback/animation_edge/run_callbacks",
+        "struct_anim:animation/frames/callback/animation_edge/start/hook",
+        "struct_anim:animation/frames/callback/animation_edge/end/hook",
         "struct_anim:animation/frames/callback/animation_edge/ongoing/hook"
     ]
 }

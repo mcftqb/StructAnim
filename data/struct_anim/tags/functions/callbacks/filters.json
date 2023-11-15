@@ -1,0 +1,8 @@
+{
+    "values": [
+        "struct_anim:animation/frames/callback/ongoing/filter",
+        "struct_anim:animation/frames/callback/animation_edge/start/filter",
+        "struct_anim:animation/frames/callback/animation_edge/end/filter",
+        "struct_anim:animation/frames/callback/animation_edge/filter"
+    ]
+}
