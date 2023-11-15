@@ -1,0 +1,2 @@
+scoreboard players reset #animation.frame_callbacks.is_ongoing struct_anim.int
+execute store success score #animation.frame_callbacks.is_ongoing struct_anim.int unless data storage struct_anim:animations root.animators_selected{just_started:true} if data storage struct_anim:animations root.animators_selected{play:true}

@@ -1,1 +1,2 @@
-execute unless data storage struct_anim:animations root.animators[-1].just_started run function #struct_anim:callbacks/animation_edge/start/ongoing
+function struct_anim:animation/frames/callback/animation_edge/ongoing/is_ongoing
+execute if score #animation.frame_callbacks.is_ongoing struct_anim.int matches 1 run function #struct_anim:callbacks/animation_edge/start/ongoing
