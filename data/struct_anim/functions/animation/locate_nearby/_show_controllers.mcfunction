@@ -1,0 +1,2 @@
+execute as @e[type=marker,tag=struct_anim_animation_controller,distance=4..32] at @s run particle block_marker structure_block ~ ~ ~ 0 0 0 1 1
+execute as @e[type=marker,tag=struct_anim_animation_controller,distance=..4] at @s run particle end_rod ~ ~ ~ 0.25 0.25 0.25 0.01 100
