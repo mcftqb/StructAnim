@@ -1,5 +1,5 @@
-execute unless block ~ ~ ~ command_block run return 0
-execute if block ~ ~ ~ command_block{Command:""} run return 0
+execute unless block ~ ~ ~ #struct_anim:command_blocks run return 0
+execute if block ~ ~ ~ #struct_anim:command_blocks{Command:""} run return 0
 
 function struct_anim:dynamic_book/state/edit_frames/_manage_callbacks/suggestions/get
 
