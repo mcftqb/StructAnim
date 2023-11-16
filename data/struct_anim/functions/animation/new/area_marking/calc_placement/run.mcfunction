@@ -5,22 +5,22 @@ function struct_anim:animator/get_block_pos
 data modify storage struct_anim:animations root.animators[-1].placement set from storage struct_anim:utils root.return.get_block_pos
 
 # X
-execute store result score #VAR_0 struct_anim.int run data get storage struct_anim:animations root.animators[-1].placement.x
-execute store result score #VAR_1 struct_anim.int run data get block ~ ~ ~ posX
-scoreboard players operation #VAR_0 struct_anim.int += #VAR_1 struct_anim.int
-execute store result storage struct_anim:animations root.animators[-1].placement.x int 1 run scoreboard players get #VAR_0 struct_anim.int
+execute store result score #animator.calc_pos.cord struct_anim.int run data get storage struct_anim:animations root.animators[-1].placement.x
+execute store result score #animator.calc_pos.offset struct_anim.int run data get block ~ ~ ~ posX
+scoreboard players operation #animator.calc_pos.cord struct_anim.int += #animator.calc_pos.offset struct_anim.int
+execute store result storage struct_anim:animations root.animators[-1].placement.x int 1 run scoreboard players get #animator.calc_pos.cord struct_anim.int
 
 # Y
-execute store result score #VAR_0 struct_anim.int run data get storage struct_anim:animations root.animators[-1].placement.y
-execute store result score #VAR_1 struct_anim.int run data get block ~ ~ ~ posY
-scoreboard players operation #VAR_0 struct_anim.int += #VAR_1 struct_anim.int
-execute store result storage struct_anim:animations root.animators[-1].placement.y int 1 run scoreboard players get #VAR_0 struct_anim.int
+execute store result score #animator.calc_pos.cord struct_anim.int run data get storage struct_anim:animations root.animators[-1].placement.y
+execute store result score #animator.calc_pos.offset struct_anim.int run data get block ~ ~ ~ posY
+scoreboard players operation #animator.calc_pos.cord struct_anim.int += #animator.calc_pos.offset struct_anim.int
+execute store result storage struct_anim:animations root.animators[-1].placement.y int 1 run scoreboard players get #animator.calc_pos.cord struct_anim.int
 
 # Z
-execute store result score #VAR_0 struct_anim.int run data get storage struct_anim:animations root.animators[-1].placement.z
-execute store result score #VAR_1 struct_anim.int run data get block ~ ~ ~ posZ
-scoreboard players operation #VAR_0 struct_anim.int += #VAR_1 struct_anim.int
-execute store result storage struct_anim:animations root.animators[-1].placement.z int 1 run scoreboard players get #VAR_0 struct_anim.int
+execute store result score #animator.calc_pos.cord struct_anim.int run data get storage struct_anim:animations root.animators[-1].placement.z
+execute store result score #animator.calc_pos.offset struct_anim.int run data get block ~ ~ ~ posZ
+scoreboard players operation #animator.calc_pos.cord struct_anim.int += #animator.calc_pos.offset struct_anim.int
+execute store result storage struct_anim:animations root.animators[-1].placement.z int 1 run scoreboard players get #animator.calc_pos.cord struct_anim.int
 
 # Read other params
 data modify storage struct_anim:animations root.animators[-1].placement.rotation set from block ~ ~ ~ rotation
