@@ -13,5 +13,3 @@ data modify block ~ ~ ~ seed set from storage struct_anim:animations root.animat
 data modify block ~ ~ ~ integrity set from storage struct_anim:animations root.animators[-1].placement.integrity
 
 data modify block ~ ~ ~ name set from storage struct_anim:animations root.animators[-1].frame_name
-
-function struct_anim:animator/mark/run

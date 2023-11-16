@@ -1,0 +1,1 @@
+data remove storage struct_anim:animations root.animators[-1].locked

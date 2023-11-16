@@ -22,3 +22,5 @@ function struct_anim:animator/new
 function struct_anim:animation/new/area_marking/calc_placement/run
 
 execute as @p[gamemode=creative] run function struct_anim:itemset/animation/edition/_give
+
+execute if data storage struct_anim:animations root.animators[-1].locked run function struct_anim:animator/hide/run

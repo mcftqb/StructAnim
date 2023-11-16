@@ -11,6 +11,7 @@ scoreboard players remove #animator.calc_pos.end.size.y struct_anim.int 1
 scoreboard players remove #animator.calc_pos.end.size.z struct_anim.int 1
 
 function struct_anim:animator/convert/to_block
+function struct_anim:animation/new/area_marking/calc_placement/check_override_compatibility
 
 # Apply mirroring
 execute if data storage struct_anim:animations root.animators[-1].placement{mirror: "LEFT_RIGHT"} run function struct_anim:animation/new/area_marking/calc_placement/_mirror_left_right

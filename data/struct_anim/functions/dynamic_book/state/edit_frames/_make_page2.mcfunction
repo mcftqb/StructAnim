@@ -3,7 +3,7 @@ execute store result storage struct_anim:dynbook root.books[-1].page_ctx.page_nu
 data modify storage struct_anim:dynbook root.books[-1].parts.page append value []
 
 # Add components
-function struct_anim:dynamic_book/state/edit_frames/_add_component {path: "visibility"}
+execute unless data storage struct_anim:animations root.animators[-1].locked run function struct_anim:dynamic_book/state/edit_frames/_add_component {path: "visibility"}
 
 function struct_anim:dynamic_book/state/edit_frames/_add_component {path: "unselect"}
 
@@ -11,6 +11,8 @@ function struct_anim:dynamic_book/state/edit_frames/_add_component {path: "unsel
 data modify storage struct_anim:dynbook root.books[-1].parts.page[-1] append value '["[ = ", {"text": "DANGER ZONE", "color": "red", "bold": true}, " = ]"]'
 
 function struct_anim:dynamic_book/state/edit_frames/_add_component {path: "fill"}
+
+execute if data storage struct_anim:animations root.animators[-1].locked run function struct_anim:dynamic_book/state/edit_frames/_add_component {path: "unlock"}
 
 execute unless score #dynbook.edit_frames.animation.has_frames struct_anim.int matches 0 run function struct_anim:dynamic_book/state/edit_frames/_add_component {path: "frames/delete"}
 

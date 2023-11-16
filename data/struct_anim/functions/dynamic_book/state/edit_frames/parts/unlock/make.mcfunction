@@ -1,0 +1,2 @@
+$data modify storage struct_anim:dynbook root.books[-1].parts.current set value '["[",{"text":"Unlock Animation","color":"red","clickEvent":{"action":"run_command","value":"$(on_click)"},"hoverEvent":{"action":"show_text","value":[{"text": "","color": "red"},"This animation instance has rotation/mirroring set.", " So creation/rewrite of frame could be unsafe and may corrupt animation data.","\\n","Click here to unlock unsafe functions."]}},"]"]'
+# tellraw @s 
