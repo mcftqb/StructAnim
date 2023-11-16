@@ -1,6 +1,6 @@
 # get_player_id uses args (name: str)
 
-data modify storage struct_anim:utils root.ctx.array_select set value {storage: "struct_anim:id", path: "root.players", filter: {}}
+function struct_anim:id/player/prefill
 data modify storage struct_anim:utils root.ctx.array_select.filter.name set from storage struct_anim:utils root.args.get_player_id.name
 function struct_anim:utils/array/select with storage struct_anim:utils root.ctx.array_select
 

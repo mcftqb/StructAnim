@@ -1,6 +1,7 @@
 # Uses selected animation
 
-data modify storage struct_anim:utils root.ctx.array_filter set from storage struct_anim:animations root.ctx.array_select.animators
+function struct_anim:animator/selection/prefill
+data modify storage struct_anim:utils root.ctx.array_filter set from storage struct_anim:utils root.ctx.array_select
 data modify storage struct_anim:utils root.ctx.array_filter.filter.animation set from storage struct_anim:animations root.animations[-1].animation
 function struct_anim:utils/array/filter with storage struct_anim:utils root.ctx.array_filter
 
