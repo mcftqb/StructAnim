@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "nbt": "root.args.str.escape.value",
+                  "storage": "struct_anim:utils"
+                }
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{is_str_escape_item:true}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
