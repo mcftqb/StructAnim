@@ -16,7 +16,7 @@ execute if data storage struct_anim:animations root.animators[-1].locked run fun
 
 execute unless score #dynbook.edit_frames.animation.has_frames struct_anim.int matches 0 run function struct_anim:dynamic_book/state/edit_frames/_add_component {path: "frames/delete"}
 
-execute unless score #dynbook.edit_frames.animation.has_frames struct_anim.int matches 0 run function struct_anim:dynamic_book/state/edit_frames/_add_component {path: "animation/delete_instance"}
+function struct_anim:dynamic_book/state/edit_frames/_add_component {path: "animation/delete_instance"}
 
 # Add page
 function struct_anim:dynamic_book/state/edit_frames/_add_page with storage struct_anim:dynbook root.books[-1].page_ctx
