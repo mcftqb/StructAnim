@@ -6,5 +6,6 @@
 # I do not claim authorship in any case
 
 # data modify storage struct_anim:utils root.args.str.escape.value set value ""
-loot spawn ~ ~ ~ loot struct_anim:str/escape
+# Name resolution performs only when command run in player context
+execute as @p run loot spawn ~ ~ ~ loot struct_anim:str/escape
 execute as @e[limit=1,predicate=struct_anim:is_str_escape_item] at @s run function struct_anim:utils/str/escape/_on_escape
