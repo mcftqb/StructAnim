@@ -1,0 +1,3 @@
+function struct_anim:id/player/select_by_uuid
+function struct_anim:animation/search/candidate_by_author
+function struct_anim:itemset/animation/new/area_marking/give_selected

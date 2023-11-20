@@ -1,0 +1,1 @@
+function struct_anim:animation/new/area_marking/tp2controller

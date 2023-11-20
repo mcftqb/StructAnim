@@ -1,0 +1,3 @@
+data modify storage struct_anim:utils root.ctx.animation.new_area_marking.give.author set from storage struct_anim:animation_candidates root.animations[-1].author
+data modify storage struct_anim:utils root.ctx.animation.new_area_marking.give.animation set from storage struct_anim:animation_candidates root.animations[-1].animation
+function struct_anim:itemset/animation/new/area_marking/give with storage struct_anim:utils root.ctx.animation.new_area_marking.give

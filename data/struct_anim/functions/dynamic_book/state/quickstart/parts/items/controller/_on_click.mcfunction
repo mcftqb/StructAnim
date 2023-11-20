@@ -1,0 +1,1 @@
+function struct_anim:dynamic_book/state/quickstart/parts/goto/_on_click
