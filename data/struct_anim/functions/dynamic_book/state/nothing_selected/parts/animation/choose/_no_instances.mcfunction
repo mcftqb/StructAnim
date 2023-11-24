@@ -1,0 +1,2 @@
+tellraw @s [{"text":"","color":"gold"}, "Action choosen automatically: ", {"text": "New Instance from Animation", "bold": true}, " (because there are no instances found)"]
+function struct_anim:dynamic_book/state/nothing_selected/parts/animation/choose/_new_instance/run
