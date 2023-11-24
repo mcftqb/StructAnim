@@ -10,6 +10,21 @@
 				"source": "root.books[-1].pages",
 				"target": "pages",
 				"op": "replace"
+			},
+			{
+				"source": "root.books[-1].title",
+				"target": "title",
+				"op": "replace"
+			},
+			{
+				"source": "root.books[-1].Name",
+				"target": "display.Name",
+				"op": "replace"
+			},
+			{
+				"source": "root.books[-1].Lore",
+				"target": "display.Lore",
+				"op": "replace"
 			}
 		]
 	},

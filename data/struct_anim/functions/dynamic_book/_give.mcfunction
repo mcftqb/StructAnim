@@ -1,1 +1,2 @@
+$data modify storage struct_anim:dynbook root.books[-1] merge value {Name:'{"text":"$(title)","color":"gold","bold":"true"}', Lore:['{"text":"$(description)"}']}
 $function struct_anim:dynamic_book/__give {tag:{display:{Name:'{"text":"$(title)","color":"gold","bold":"true"}', Lore:['{"text":"$(description)"}']}, title:"$(title)", author:"$(author)", pages:$(pages), generation:3, struct_anim_dynbook:1b}}
