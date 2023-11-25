@@ -9,5 +9,7 @@ data modify storage struct_anim:dynbook root.books[-1].parts.page[-1] append val
 
 function struct_anim:dynamic_book/state/edit_frames/_add_component {path: "animation/delete"}
 
+function struct_anim:dynamic_book/state/edit_frames/_add_component {path: "animation/defaults"}
+
 # Add page
 function struct_anim:dynamic_book/state/edit_frames/_add_page with storage struct_anim:dynbook root.books[-1].page_ctx

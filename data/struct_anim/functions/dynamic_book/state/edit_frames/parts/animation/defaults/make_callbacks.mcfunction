@@ -1,0 +1,2 @@
+execute unless data storage struct_anim:animations root.animations[-1].defaults.callbacks.all[0] run data modify storage struct_anim:dynbook root.books[-1].parts.animation.controls_ext.defaults_callbacks set value ''
+execute if data storage struct_anim:animations root.animations[-1].defaults.callbacks.all[0] run data modify storage struct_anim:dynbook root.books[-1].parts.animation.controls_ext.defaults_callbacks set from storage struct_anim:dynbook root.books[-1].parts.animation.controls_ext._defaults_callbacks
