@@ -1,0 +1,2 @@
+$function struct_anim:dynamic_book/state/$(current_state)/parts/$(current_part)/make_$(current_subpart) with storage struct_anim:dynbook root.books[-1].page_ctx
+$data modify storage struct_anim:dynbook root.books[-1].parts.sub."$(current_part)".all append from storage struct_anim:dynbook root.books[-1].parts.current_subpart

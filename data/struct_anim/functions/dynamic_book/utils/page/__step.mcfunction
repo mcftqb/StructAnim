@@ -1,0 +1,2 @@
+$data modify storage struct_anim:dynbook root.books[-1].page_ctx.this_page set value "$(this_book).parts.page[$(page_num)]"
+$function struct_anim:dynamic_book/state/$(current_state)/pages/$(page_num) with storage struct_anim:dynbook root.books[-1].page_ctx

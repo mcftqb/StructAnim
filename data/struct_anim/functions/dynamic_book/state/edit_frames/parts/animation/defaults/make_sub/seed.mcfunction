@@ -1,0 +1,1 @@
+$data modify storage struct_anim:dynbook root.books[-1].parts.current_subpart set value '["Seed: ", {"nbt":"$(this_animation).defaults.placement.seed","storage":"struct_anim:animations"}]'

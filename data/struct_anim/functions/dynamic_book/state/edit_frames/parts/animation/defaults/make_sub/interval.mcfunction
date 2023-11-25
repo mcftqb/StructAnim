@@ -1,0 +1,1 @@
+$data modify storage struct_anim:dynbook root.books[-1].parts.current_subpart set value '["Update interval: ", {"nbt":"$(this_animation).defaults.interval","storage":"struct_anim:animations"}]'

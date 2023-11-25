@@ -1,0 +1,1 @@
+$data modify storage struct_anim:dynbook root.books[-1].current_page set value '["",{"nbt":"$(this_page)[]", "storage":"struct_anim:dynbook", "separator":"\\n\\n", "interpret":"true"}]'

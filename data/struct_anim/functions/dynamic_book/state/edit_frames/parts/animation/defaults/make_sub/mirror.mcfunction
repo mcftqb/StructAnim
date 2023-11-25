@@ -1,0 +1,1 @@
+$data modify storage struct_anim:dynbook root.books[-1].parts.current_subpart set value '["Mirror: ", {"nbt":"$(this_animation).defaults.placement.mirror","storage":"struct_anim:animations"}]'

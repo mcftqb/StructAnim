@@ -1,0 +1,1 @@
+function struct_anim:dynamic_book/utils/ctx/_add_selectors with storage struct_anim:dynbook root.books[-1].page_ctx

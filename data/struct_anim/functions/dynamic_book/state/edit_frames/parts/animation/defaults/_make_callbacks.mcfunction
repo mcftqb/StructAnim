@@ -1,1 +1,0 @@
-$data modify storage struct_anim:dynbook root.books[-1].parts.animation.controls_ext._defaults_callbacks set value '["\\nCallbacks:\\n", {"nbt":"$(this_animation).defaults.callbacks.all[]", "font":"uniform", "color":"dark_green", "separator":{"text":"; ","color":"gray"},"storage":"struct_anim:animations"}]'
