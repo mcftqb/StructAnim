@@ -1,9 +1,8 @@
+function struct_anim:dynamic_book/state/edit_frames/_manage_callbacks/suggestions/get
 function struct_anim:animator/selection/prefill
-data modify storage struct_anim:utils root.ctx.array_filter set from storage struct_anim:utils root.ctx.array_select
-function struct_anim:dynamic_book/selection/get
 data modify storage struct_anim:utils root.ctx.array_select.filter.animation set from storage struct_anim:animations root.suggestions[-1].animations.animation
 function struct_anim:utils/array/has with storage struct_anim:utils root.ctx.array_select
-
+tellraw @a {"nbt":"root.ctx.array_select", "storage": "struct_anim:utils"}
 scoreboard players reset #animation.selection.has_instance struct_anim.int
 scoreboard players operation #animation.selection.has_instance struct_anim.int = #array_select.has_element struct_anim.int 
 
