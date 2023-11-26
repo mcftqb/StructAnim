@@ -17,3 +17,6 @@ function struct_anim:animation/new/area_marking/calc_placement/run
 function struct_anim:animation/new/area_marking/clear_borders/run with storage struct_anim:animations root.animators[-1].placement
 
 function struct_anim:itemset/animation/edition/give with storage struct_anim:animations root.animations[-1]
+
+tellraw @a[gamemode=creative,distance=..8] {"text": "Animation successfully created!", "color": "gold"}
+tellraw @a[gamemode=creative,distance=..8] {"text": "Don't change relative position.", "color": "dark_green"}

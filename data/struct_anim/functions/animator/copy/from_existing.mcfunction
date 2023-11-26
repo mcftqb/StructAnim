@@ -30,3 +30,6 @@ function struct_anim:animation/frames/place
 execute as @p[gamemode=creative] run function struct_anim:itemset/animation/edition/_give
 
 execute if data storage struct_anim:animations root.animators[-1].locked run function struct_anim:animator/hide/run
+
+tellraw @p[gamemode=creative] [{"text": "", "color": "gold"},{"text": "Animation", "bold": true, "hoverEvent": {"action": "show_text","value": [{"text": "ID: ", "color": "gold"}, {"nbt":"root.animations[-1].animation", "storage": "struct_anim:animations", "font": "uniform", "bold": true}]}}, " successfully instantiated!"]
+tellraw @p[gamemode=creative] {"text": "Don't change relative position.", "color": "dark_green"}
