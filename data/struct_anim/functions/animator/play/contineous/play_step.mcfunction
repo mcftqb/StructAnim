@@ -7,7 +7,6 @@ function struct_anim:animation/search/animation_by_selection
 execute store result score #animator_contineous_play.playing struct_anim.int run data get storage struct_anim:animations root.animators[-1].play
 execute unless score #animator_contineous_play.playing struct_anim.int matches 1 run return 0
 
-data modify storage struct_anim:utils root.args.animator_next_frame.id set from storage struct_anim:utils root.args.schedule_callback.args.id
 function struct_anim:animator/play/step/next
 
 execute store result score #animator_contineous_play.playing struct_anim.int run data get storage struct_anim:animations root.animators[-1].play

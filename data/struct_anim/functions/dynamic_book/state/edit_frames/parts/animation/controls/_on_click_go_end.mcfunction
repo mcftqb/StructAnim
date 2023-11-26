@@ -1,7 +1,9 @@
 function struct_anim:animator/selection/get
 function struct_anim:animation/search/animation_by_selection
-data modify storage struct_anim:animations root.animators[-1].frame set from storage struct_anim:animations root.animations[-1].frames_count
-function struct_anim:animator/play/step/previous_selected
+
+function struct_anim:actions/pause
+function struct_anim:actions/to_end
+function struct_anim:animation/frames/place
 
 # Update book
 function struct_anim:dynamic_book/state/edit_frames/give
