@@ -1,0 +1,60 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:writable_book",
+            "functions": [
+              {
+                "function": "minecraft:copy_nbt",
+                "source": {
+                  "type": "minecraft:storage",
+                  "source": "struct_anim:utils"
+                },
+                "ops": [
+                  {
+                    "source": "root.args.export.callbacks.pages",
+                    "target": "pages",
+                    "op": "replace"
+                  },
+                  {
+                    "source": "root.args.export.callbacks.buffer",
+                    "target": "struct_anim_buffer",
+                    "op": "replace"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "Exported Callbacks",
+                  "color": "gold",
+                  "bold": true
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                    {
+                      "text": "Callbacks stored: ",
+                      "color": "gold"
+                    },
+                    {
+                      "nbt": "root.args.export.callbacks.count",
+                      "storage": "struct_anim:utils"
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
