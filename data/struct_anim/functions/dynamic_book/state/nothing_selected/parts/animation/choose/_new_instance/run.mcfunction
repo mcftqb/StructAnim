@@ -1,4 +1,4 @@
-function struct_anim:dynamic_book/selection/get
+function struct_anim:dynamic_book/state/edit_frames/_manage_callbacks/suggestions/get
 
 data modify storage struct_anim:utils root.args.get_animation.id set from storage struct_anim:animations root.suggestions[-1].animations.animation
 function struct_anim:animation/search/animation_by_name
@@ -9,6 +9,7 @@ execute unless data storage struct_anim:animations root.animations[-1].frames[0]
 
 data modify storage struct_anim:utils root.ctx.give_instantiate_animation_itemset.name set from storage struct_anim:animations root.animations[-1].frames[0]
 data modify storage struct_anim:utils root.ctx.give_instantiate_animation_itemset.id set from storage struct_anim:animations root.animations[-1].animation
+data modify storage struct_anim:utils root.ctx.give_instantiate_animation_itemset merge value {mirror:"NONE",rotation:"NONE",seed:0L,integrity:1.0f}
 data modify storage struct_anim:utils root.ctx.give_instantiate_animation_itemset merge from storage struct_anim:animations root.animations[-1].defaults.placement
 
 function struct_anim:dynamic_book/clear

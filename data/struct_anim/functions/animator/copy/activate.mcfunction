@@ -19,7 +19,6 @@ data modify storage struct_anim:animations root.animators[-1].copy_of set from b
 
 function struct_anim:animator/get_block_pos
 data modify storage struct_anim:animations root.animators[-1].controller set from storage struct_anim:utils root.return.get_block_pos
-data modify storage struct_anim:animations root.animators[-1].play set value false
 
 data modify block ~ ~ ~ sizeX set from storage struct_anim:animations root.animators[-1].placement.size.x
 data modify block ~ ~ ~ sizeY set from storage struct_anim:animations root.animators[-1].placement.size.y
@@ -29,6 +28,9 @@ function struct_anim:animation/new/area_marking/calc_placement/run
 data modify storage struct_anim:utils root.args.select_animator.animator set from storage struct_anim:animations root.animators[-1].id
 function struct_anim:animator/selection/set
 function struct_anim:animation/search/animation_by_selection
+
+function struct_anim:actions/pause
+function struct_anim:animation/frames/place
 
 execute as @p[gamemode=creative] run function struct_anim:itemset/animation/edition/_give
 execute if data storage struct_anim:animations root.animators[-1].locked run function struct_anim:animator/hide/run
