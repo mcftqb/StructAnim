@@ -1,0 +1,71 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:written_book",
+            "functions": [
+              {
+                "function": "minecraft:copy_nbt",
+                "source": {
+                  "type": "minecraft:storage",
+                  "source": "struct_anim:utils"
+                },
+                "ops": [
+                  {
+                    "source": "root.args.export.all.pages",
+                    "target": "pages",
+                    "op": "replace"
+                  },
+                  {
+                    "source": "root.args.export.all.animations",
+                    "target": "struct_anim_data.animations",
+                    "op": "replace"
+                  },
+                  {
+                    "source": "root.args.export.all.players",
+                    "target": "struct_anim_data.players",
+                    "op": "replace"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "entity": "this",
+                "tag": "{title:\"§6§lSA: Exported Data\", author:\"§6§lStructures Animator\",generation:3}"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                    {
+                      "text": "Animations stored: ",
+                      "color": "gold"
+                    },
+                    {
+                      "nbt": "root.args.export.all.animations_count",
+                      "storage": "struct_anim:utils"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Players stored: ",
+                      "color": "gold"
+                    },
+                    {
+                      "nbt": "root.args.export.all.players_count",
+                      "storage": "struct_anim:utils"
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

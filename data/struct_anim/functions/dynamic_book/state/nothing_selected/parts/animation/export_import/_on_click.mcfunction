@@ -1,0 +1,1 @@
+function struct_anim:export_import

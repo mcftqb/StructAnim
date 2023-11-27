@@ -6,6 +6,7 @@ execute store success score #dynbook.edit_frames.animation.has_frames struct_ani
 function struct_anim:dynamic_book/utils/parts/add {name: "select"}
 function struct_anim:dynamic_book/utils/parts/add {name: "animation/instance"}
 function struct_anim:dynamic_book/utils/parts/add {name: "animation/choose"}
+function struct_anim:dynamic_book/utils/parts/add {name: "animation/export_import"}
 
 # Add page
 function struct_anim:dynamic_book/utils/page/add
