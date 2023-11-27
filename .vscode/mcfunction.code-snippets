@@ -29,7 +29,7 @@
 		]
 	},
 	"Log error" : {
-		"prefix": "error",
+		"prefix": "logError",
 		"body": [
 			"function struct_anim:utils/log/error {text: \"$1\", trace: \"$2\"}",
 			"$0"
@@ -84,7 +84,20 @@
 		"body": [
 			"storage struct_anim:utils root.ctx.$0"
 		]
-	}
+	},
+	"showError" : {
+		"prefix": "errShow",
+		"body": [
+			"function struct_anim:utils/error/show {e:[\"$0\"]}"
+		]
+	},
+	"checkError" : {
+		"prefix": "errCheck",
+		"body": [
+			"execute unless score #is_error struct_anim.int matches 0 run return 0",
+			"$0"
+		]
+	},
 	"forEach" : {
 		"prefix": "forEach",
 		"body": [

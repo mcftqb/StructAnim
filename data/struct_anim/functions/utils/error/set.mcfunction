@@ -1,0 +1,1 @@
+scoreboard players set #is_error struct_anim.int 1
