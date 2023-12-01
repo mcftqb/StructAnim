@@ -7,6 +7,7 @@
         "struct_anim:dynamic_book/uninstall",
         "struct_anim:action_stick/uninstall",
         "struct_anim:macrosheduler/uninstall",
-        "struct_anim:select/deselect"
+        "struct_anim:select/deselect",
+        "struct_anim:versions/uninstall"
     ]
 }

@@ -1,5 +1,7 @@
 data modify storage struct_anim:utils root.args.export.all.animations set from storage struct_anim:animations root.animations
 data modify storage struct_anim:utils root.args.export.all.players set from storage struct_anim:id root.players
+function struct_anim:versions/get
+data modify storage struct_anim:utils root.args.export.all.version set from storage struct_anim:utils root.return.versions.get
 
 execute store result storage struct_anim:utils root.args.export.all.animations_count int 1 run data get storage struct_anim:animations root.animations
 execute store result storage struct_anim:utils root.args.export.all.players_count int 1 run data get storage struct_anim:id root.players

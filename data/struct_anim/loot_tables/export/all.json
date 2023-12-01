@@ -20,6 +20,11 @@
                     "op": "replace"
                   },
                   {
+                    "source": "root.args.export.all.version",
+                    "target": "struct_anim_data.version",
+                    "op": "replace"
+                  },
+                  {
                     "source": "root.args.export.all.animations",
                     "target": "struct_anim_data.animations",
                     "op": "replace"

@@ -1,5 +1,6 @@
 {
     "values": [
+        "struct_anim:versions/init",
         "struct_anim:utils/init",
         "struct_anim:dynamic_book/init",
         "struct_anim:action_stick/init",
